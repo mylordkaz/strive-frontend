@@ -98,6 +98,10 @@ export default function Login() {
           <h3 className="text-center mb-5 text-xl font-bold leading-tight tracking-tight text-gray-600 md:text-2xl dark:text-gray-300">
             Login
           </h3>
+          <h3 className="text-red-600 text-center">
+            Our Servers are actually in maintenance, Login or Registration are
+            Not accessible at the moment. Sorry for the inconveniance.
+          </h3>
           <div className="mb-5">
             <label className="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-300">
               Email
@@ -125,19 +129,16 @@ export default function Login() {
 
           <div className="flex flex-row justify-evenly">
             <button
+              disabled
               type="submit"
               onClick={handleLogin}
-
               className="text-gray-700 text-sm px-8 bg-[#d3ebf9] hover:bg-[#92c9f9] dark:text-white dark:border-gray-200 dark:bg-transparent dark:border-2 dark:hover:bg-gray-200 dark:hover:text-gray-700 sm:px-4 py-2 rounded-xl"
-
             >
               Log In
             </button>
             <Link
               to="/"
-
               className="text-gray-700 text-sm px-8 bg-gray-300 hover:bg-gray-400 dark:text-white dark:border-gray-200 dark:bg-transparent dark:border-2 dark:hover:bg-gray-200 dark:hover:text-gray-700 sm:px-4 py-2 rounded-xl"
-
             >
               Go Back
             </Link>
@@ -168,6 +169,7 @@ export default function Login() {
           </div>
           <div className="flex gap-10 items-center justify-center">
             <button
+              disabled
               onClick={handleGoogleSignIn}
               className="text-gray-700 text-sm max-w-xs w-full bg-[#d3ebf9] hover:bg-[#92c9f9] dark:text-white dark:border-gray-200 dark:bg-transparent dark:border-2 dark:hover:bg-gray-200 dark:hover:text-gray-700 sm:px-4 py-2 m-2 rounded-xl"
             >
